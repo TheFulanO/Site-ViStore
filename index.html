@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090B">
+  <title>Vi Store — Scripts Premium</title>
+  <meta name="description" content="Vi Store — scripts premium para MTA, FiveM, SA:MP e OpenMP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <div class="bg-orb orb-a"></div><div class="bg-orb orb-b"></div>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">V</span><span>VI <em>STORE</em></span></a>
+    <nav id="main-nav">
+      <a href="#home">Início</a><a href="#store">Loja</a><a href="#categories">Categorias</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" title="Favoritos" onclick="location.hash='#favorites'"><i data-lucide="heart"></i><b id="fav-count">0</b></button>
+      <button class="icon-btn" title="Carrinho" onclick="location.hash='#cart'"><i data-lucide="shopping-bag"></i><b id="cart-count">0</b></button>
+      <div id="auth-slot"><button class="btn btn-ghost" onclick="location.hash='#login'">Entrar</button></div>
+      <button class="mobile-menu" onclick="document.body.classList.toggle('menu-open')"><i data-lucide="menu"></i></button>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <footer class="footer">
+    <div><div class="brand"><span class="brand-mark">V</span><span>VI <em>STORE</em></span></div><p>Scripts premium para experiências GTA RP.</p></div>
+    <div class="footer-links"><a href="#store">Loja</a><a href="#categories">Categorias</a><a href="#account">Minha conta</a><a href="#admin">Admin</a></div>
+    <div class="footer-bottom"><span>© 2026 Vi Store</span><span>Glass UI · Neon Core</span></div>
+  </footer>
+
+  <div id="toast-root"></div>
+  <script src="app.js"></script>
+</body>
+</html>
